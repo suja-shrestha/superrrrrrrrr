@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 2px black solid;
+            background: linear-gradient(rgb(247, 0, 255), black);
+        }
+
+        .ik {
+            display: flex;
+            padding: 20px;
+            text-align: left;
+        }
+
+        img {
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 70px;
+            text-shadow: 0 0 10px rgb(133, 10, 10);
+        }
+
+        p {
+            font-size: 30px;
+            text-shadow: 0 0 10px rgb(0, 0, 0);
+        }
+
+        .box {
+            width: 640px;
+            height: 640px;
+        }
+
+        @media screen and (max-width: 1013px) {
+            body {
+                background: linear-gradient(rgb(247, 0, 255), black);
+            }
+
+            .container {
+                width: 400px;
+                border: none;
+            }
+
+            h1 {
+                font-size: 150px;
+            }
+
+            p {
+                font-size: 50px;
+            }
+
+            .ik {
+                display: block;
+                padding: 10px;
+                align-items: center;
+            }
+
+            img {
+                width: 975px;
+                display: block;
+                
+            }
+
+            .box {
+                margin: 10px;
+                width: 1030px;
+
+            }
+
+            div {
+                width: 1013px;
+                text-align: center;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="ik">
+            <div>
+                <h1>My name is</h1>
+                <h1>John</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet culpa autem fuga animi beatae explicabo
+                    magni,
+                    minima est illo alias pariatur odit veritatis, earum minus saepe, sit dicta neque quod asperiores.
+                    Nihil
+                    harum ut fugit eius dolor hic laborum vero?</p>
+            </div>
+            <div class="box">
+                <img width="600px"
+                    src="https://img.freepik.com/free-vector/gradient-geometric-shapes-background_23-2148154609.jpg?size=626&ext=jpg&ga=GA1.2.1304309921.1702436490&semt=sph"
+                    alt="" srcset="">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

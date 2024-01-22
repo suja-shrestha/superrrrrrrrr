@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+
+body{
+    
+    border: 1px red solid;
+}
+
+a{
+    color: aqua;
+    text-decoration: none;
+    
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box{
+    background-color:green;
+    height: 300px;
+    width: 300px;
+    margin: 0 0 0 200px;
+    margin-top: 30px;
+}
+
+.box2{
+    position: relative;
+    background-color:green;
+    width: 380px;
+    height: 300px;
+    margin: 0 300px 0 0;
+    margin-top: 30px;
+}
+
+.navbar{
+    display: flex;
+    background-color:maroon;
+    height: 80px;
+    margin: 40px 10px 0 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-items{
+    display: flex;
+    gap: 50px;
+}
+
+.sub-box{
+    position: absolute;
+    background-color:aquamarine;
+    height: 60px;
+    width: 150px;
+    margin: 40px 0 0 30px;
+}
+
+.sub-box2{
+    position: absolute;
+    background-color: aquamarine;
+    height: 60px;
+    width: 150px;
+    right: 30px;
+    margin-top: 40px;
+}
+
+
+.box3{
+    margin: 60px 0 0 200px;
+    height: 300px;
+    width: 800px;
+    background-color: darkblue;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+        <div class="box2">
+            <div class="navbar">
+                <div class="nav-items">
+                    <a href="#">Home</a> 
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+            <div class="sub-box"></div>
+            <div class="sub-box2"></div>
+        </div>
+    
+
+    </div>
+    <div class="box3"></div>
+</body>
+</html>
