@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .h1{
+            display: flex;
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="one">1</h1>
+    <h1 id="two">2</h1>
+    <h1 id="three">3</h1>
+    <script>
+function function1(){
+    document.getElementById("one").innerHTML="lets";
+    document.getElementById("one").style.color="aqua";
+    document.getElementById("one").style.border="2px red solid";
+    document.getElementById("one").style.width="150px";
+    document.getElementById("one").style.transform="rotate(168860deg)";
+    document.getElementById("one").style.transition="150s";
+    document.getElementById("one").style.backgroundColor="aqua";
+}
+function function2(){
+    document.getElementById("two").innerHTML="learn";
+    document.getElementById("two").style.justifyContent="center"
+    document.getElementById("two").style.border="2px red solid";
+    document.getElementById("two").style.width="150px";
+    document.getElementById("two").style.transform="rotate(168860deg)";
+    document.getElementById("two").style.transition="150s";
+    document.getElementById("two").style.backgroundColor="yellow";
+}
+function function3(){
+    document.getElementById("three").innerHTML="javascript";
+    document.getElementById("three").style.border="2px red solid";
+    document.getElementById("three").style.width="150px";
+    document.getElementById("three").style.transform="rotate(168860deg)";
+    document.getElementById("three").style.transition="150s";
+    document.getElementById("three").style.backgroundColor="red";
+    
+}
+setTimeout(function1, 2000);
+setTimeout(function2, 2000);
+setTimeout(function3, 2000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mapping data</title>
+        <style>
+            *{
+                padding: 0%; margin: 0%;
+                box-sizing: border-box;
+            }
+            img {
+                width: 400px;
+                height: 300px;
+                object-fit: cover;
+            }
+
+            .container {
+                display: flex;
+                gap: 20px;
+                border: 2px solid aqua;
+                box-shadow: rgba(48, 224, 186, 0.534);
+                background: url(https://imgs.search.brave.com/ZsIWiQ-HECXELx2eQsiCsTLTzzPn7UmZeUBR9WCGht4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDI2MTM2/MzguanBn);
+                color: white;
+                text-align: center;
+                border: 2px solid aqua;
+                border-radius: 10px;
+              justify-content: space-between;
+              padding: 10px;
+              line-height: 25px;
+            }
+
+            #hello {
+                border-right: 5px solid lightblue;
+                border-bottom: solid 5px lightblue;
+                border-radius: 10px;
+
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="container" class="container">
+
+        </div>
+        <script src="data.js"></script>
+        <script>
+            let usersContainer = document.getElementById("container");
+
+            const mappedUsers = users.map((user, index) => {
+                return `<div class="project-card" key=${index}>
+<img id="hello" src='${user.avatar}' alt="user profile image" />
+<div class="details">
+<p>${user.name}</p>
+<p>${user.home_address}</p>
+<p>${user.office_address}</p>
+</div>
+</div>`
+            });
+            usersContainer.innerHTML = mappedUsers
+        </script>
+
+    </html>
+</body>
+
+</html>
