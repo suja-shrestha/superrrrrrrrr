@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var ans=new Promise(function(res,rej){
+    return res("uthinxa");
+})
+var ans2=ans.then(function(data){
+    console.log(data);
+    return new Promise(function (res,rej){
+        return res("kapada lagaunay");
+    })
+})
+var ans3=ans2.then(function(data){
+    console.log(data);
+    return new Promise(function(res,rej){
+        return res("gadi chadiyo");
+    })
+})
+    </script>
+</body>
+</html>
