@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=3, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            padding: 20px;
+           
+        }
+    </style>
+</head>
+
+<body>
+    <form onsubmit="return validate()" action="message.html" name="myform">
+        <label for="fName">First name</label><br>
+        <input type="text" name="fName" id="fName" placeholder="Enter name"><br>
+        <label for="email">Email</label><br>
+        <input type="email" name="email" id="email" placeholder="Email"><br>
+        <label for="address">Address</label><br>
+        <input type="text" name="address" id="address" placeholder="Enter address"><br>
+        <select name="option" id="option">
+            <option value="">Select an option</option>
+            <option value="1">Hong Kong</option>
+            <option value="2">Nepal</option>
+        </select><br>
+        <input type="radio" name="edu" id="hm">HM
+        <input type="radio" name="edu" id="bcsit">BCSIT<br>
+        <input type="checkbox" name="gender" id="girlCheckbox">Hello
+        <input type="checkbox" name="gender" id="boyCheckbox">Bye<br>
+        <button type="submit">Submit</button><br>
+    </form>
+
+    <script>
+        function validate() {
+
+            let fName = document.forms["myform"]["fName"].value;
+            let email = document.forms["myform"]["email"].value;
+            let address = document.forms["myform"]["address"].value;
+            let option = document.forms["myform"]["option"].value;
+
+
+            if (fName === "" || email === "" || address === "" || option === "") {
+                alert("Please fill out all the required fields.");
+                return false;
+            } else {
+                confirm("Do you want to proceed?");
+                return true;
+            }
+        }
+    </script>
+</body>
+
+</html>

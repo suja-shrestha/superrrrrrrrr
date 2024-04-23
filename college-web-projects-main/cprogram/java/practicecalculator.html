@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="result"></div>
+    <script>
+        let num1=parseInt(prompt("enter the first element"));
+        let num2=parseInt(prompt("enter the seocund number"));
+        let operator=prompt("enter the operator");
+        let result=document.getElementById("result");
+        switch (operator){
+            case "+":  result.innerHTML="result :" +(num1+num2);
+            break;
+            case "-":result.innerHTML="result :" +(num1-num2);
+            break;
+            case "/":result.innerHTML="result :" +(num1/num2);
+            break;
+            case "*":result.innerHTML="result :" +(num1*num2);
+            break;
+            default:result.innerHTML="invalid operator."
+        }
+    </script>
+</body>
+</html>

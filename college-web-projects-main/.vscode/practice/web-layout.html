@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+
+        }
+
+        .flex {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            width: 800px;
+            height: 100px;
+            background-color: blue;
+            text-align: center;
+        }
+
+        .inbox {
+            width: 190px;
+            margin: 10px 10px 10px 0;
+            height: 600px;
+            text-align: center;
+            background-color: skyblue;
+        }
+
+        .messege {
+            width: 400px;
+            height: 600px;
+            margin: 10px 0px 10px;
+            text-align: center;
+            background-color: skyblue;
+        }
+
+        .footer {
+            width: 800px;
+            height: 90px;
+            text-align: center;
+            background-color: blue;
+
+        }
+
+        .div {
+            display: flex;
+        }
+
+        .border {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex">
+        <div class="header border ">header</div>
+        <div class="div">
+            <div class="inbox border ">indox</div>
+            <div class="inbox border ">list</div>
+            <div class="messege border ">messege</div>
+
+        </div>
+        <div class="footer border "> footer</div>
+    </div>
+    
+</body>
+
+</html>

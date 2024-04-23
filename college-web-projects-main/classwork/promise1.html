@@ -11,16 +11,22 @@
     return res("uthinxa");
 })
 var ans2=ans.then(function(data){
-    console.log(data);
+    document.write(data);
     return new Promise(function (res,rej){
         return res("kapada lagaunay");
     })
 })
 var ans3=ans2.then(function(data){
-    console.log(data);
+    document.write(data);
     return new Promise(function(res,rej){
         return res("gadi chadiyo");
     })
+})
+    var ans4=ans3.then(function(data){
+    document.write(data);
+        return new promise(function(res,rej){
+            return res("ghar janay");
+        })
 })
     </script>
 </body>

@@ -1,0 +1,42 @@
+Prayush
+Prayush Hada
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="" name="myForm" onsubmit="return validateForm()">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+        <br>
+        <label for="days">Days</label>
+        <input type="number" id="days" name="days">
+        <br>
+        <label for="cost">Cost</label>
+        <input type="text" id="cost" name="cost">
+        <br>
+        <input type="submit" value="submit">
+    </form>
+    <script>
+        function validateForm() {
+            const name = document.forms["myForm"]["name"].value;
+            const days = document.forms["myForm"]["days"].value;
+            const cost = document.forms["myForm"]["cost"].value;
+
+            if (name && days && cost) {
+                confirm("Thank you for filling out the form")
+            }
+            else {
+                alert("Please fill the form");
+            }
+        }
+    </script>
+</body>
+
+</html>

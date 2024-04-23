@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex {
+            border: 2px red solid;
+            display: flex;
+            width: auto;
+            height: 700px;
+            flex-wrap: wrap;
+            background-color: yellow;
+            flex-direction: row;
+            align-content: space-between;
+
+        }
+
+        .items {
+            border: blue solid 2px;
+            width: 200px;
+            height: 200px;
+            background-color: white;
+        }
+
+        .item-1 {
+            width: 100px;
+            height: 100px;
+            flex-grow: 1;
+        }
+
+        .item-2 {
+            width: 200px;
+            height: 200px;
+            flex-grow: 2;
+        }
+
+        .item-3 {
+            widows: 300px;
+            height: 300px;
+            flex-shrink: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex">
+        <div class="items item-1">a</div>
+        <div class="items item-2">b</div>
+        <div class="items item-3">c</div>
+    </div>
+</body>
+
+</html>

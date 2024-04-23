@@ -17,7 +17,7 @@
          fetch(`https://dummyjson.com/products/1`)
          .then(response => response.json())
          .then(data => {
-            output.innerHTML=`<h1>${data.id}</h1>
+           output.innerHTML=`<h1>${data.id}</h1>
             <h3>Brand: ${data.brand}</h3>
             <p><strong>Category: </strong> ${data.category}</p>
             <p><strong>Price: </strong> ${data.price}</p>

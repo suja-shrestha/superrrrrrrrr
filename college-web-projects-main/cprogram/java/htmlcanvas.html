@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Canvas Example</title>
+    <style>
+        /* Style the canvas element */
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!-- Define the canvas element -->
+    <canvas id="myCanvas" width="200" height="100"></canvas>
+
+    <script>
+        // Get the canvas element
+        var canvas = document.getElementById("myCanvas");
+
+        // Get the canvas 2D drawing context
+        var ctx = canvas.getContext("2d");
+
+        // Set the fill color
+        ctx.fillStyle = "blue";
+
+        // Draw a filled rectangle
+        ctx.fillRect(50, 25, 100, 50);
+    </script>
+</body>
+</html>
